@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DonorIn - Layanan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container flex-header">
+            <div class="logo"><strong>DonorIn</strong></div>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="page2.html" >Butuh Donor</a>
+                <a href="#stok">Stok Darah</a>
+                <a href="#daftar">Daftar</a>
+            </nav>
+            <button class="btn-admin">LOGIN ADMIN</button>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        
+        <section id="stok" class="content-block">
+            <h2>Ketersediaan Stok Darah</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Golongan Darah</th>
+                        <th>Jumlah Kantong</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A+</td>
+                        <td>12</td>
+                        <td>Tersedia</td>
+                    </tr>
+                    <tr>
+                        <td>B+</td>
+                        <td>3</td>
+                        <td>Kritis</td>
+                    </tr>
+                    <tr>
+                        <td>O+</td>
+                        <td>25</td>
+                        <td>Tersedia</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="daftar" class="content-block">
+            <h3>Pendaftaran Relawan Baru</h3>
+            <form action="#" class="registration-form">
+                <div class="form-group">
+                    <label for="full-name">Nama Lengkap</label>
+                    <input type="text" id="full-name" name="nama" required placeholder="Masukkan Nama Lengkap">
+                </div>
+
+                <div class="form-group">
+                    <label for="user-email">Email Aktif</label>
+                    <input type="email" id="user-email" name="email" required placeholder="nama@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="birth-date">Tanggal Lahir</label>
+                    <input type="date" id="birth-date" name="tgl" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="blood-type">Golongan Darah</label>
+                    <select id="blood-type" name="goldar" required>
+                        <option value="">-- Pilih --</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="O">O</option>
+                        <option value="AB">AB</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">KIRIM DATA</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 DonorIn System. Dibuat oleh: ZUNNUN QORINA (F1D02410030)</p>
+    </footer>
+
+</body>
+</html>
